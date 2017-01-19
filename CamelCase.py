@@ -1,11 +1,21 @@
-'''Program: CamelCase 
+'''Program: CamelCase
 Author: Jeremy Belisle
 Last Date Modified: 1/10/17
 This program will let the user input a sentence and will convert it to camel case'''
 
 print("CamelCase Converter", "\n")
 
+
+
+def display_banner():
+    '''Display program name in a banner'''
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' * len(msg)
+    print('\n', stars, '\n', msg, '\n', stars, '\n')
+
 check = True
+
+display_banner()
 
 while check:
 
@@ -26,4 +36,3 @@ while check:
             userInput = userInput.replace(" ", "")  # getting rid of the spaces
             check = False
             print(userInput[0].lower() + userInput[1:])  # Printing the output with the first letter in lower case
-
